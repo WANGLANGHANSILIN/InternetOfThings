@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="@drawable/dialog_connect_shape"
+    android:padding="15dp"
+     >
+
+    <com.wanglang.internetofthings.view.MyTextView
+        android:id="@+id/tv_dialog_err_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="45dp"
+        android:minLines="5"
+        android:text="TextView"
+        android:textColor="@color/black"
+        android:autoLink="all" />
+
+    <LinearLayout
+        android:layout_marginTop="5dp"
+        style="@style/ll_show_style"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_dialog_err_info"
+        android:orientation="horizontal" 
+        android:gravity="center"
+        android:layout_marginBottom="15dp">
+
+        <Button
+            android:id="@+id/bt_dialog_retry"
+            style="@style/bt_style_settring"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Retry" />
+
+        <Button
+            android:id="@+id/bt_dialog_exit"
+            style="@style/bt_style_settring"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Exit" />
+    </LinearLayout>
+
+</RelativeLayout>

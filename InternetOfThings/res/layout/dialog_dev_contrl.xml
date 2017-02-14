@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <TextView
+                style="@style/tv_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="远程机器控制"
+                android:textColor="@color/coral"
+                android:textSize="25sp" />
+
+            <LinearLayout
+                style="@style/ll_show_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="22dp" >
+
+                <TextView
+                    style="@style/tv_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="设备ID: " />
+
+                <ImageView
+                    android:id="@+id/iv_dialog_dev_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="2dp"
+                    android:src="@android:drawable/sym_action_call" />
+
+                <TextView
+                    android:id="@+id/tv_dialog_dev_id"
+                    style="@style/tv_show_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:text="id" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/ll_show_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    style="@style/tv_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="设备名称: " />
+
+                <ImageView
+                    android:id="@+id/iv_dialog_dev_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="2dp"
+                    android:src="@android:drawable/sym_action_call" />
+
+                <TextView
+                    android:id="@+id/tv_dialog_dev_name"
+                    style="@style/tv_show_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:text="开机" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/ll_show_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    style="@style/tv_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="设备位置: " />
+
+                <ImageView
+                    android:id="@+id/iv_dialog_dev_locat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="2dp"
+                    android:src="@android:drawable/sym_action_call" />
+
+                <TextView
+                    android:id="@+id/tv_dialog_dev_locat"
+                    style="@style/tv_show_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:text="广州" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/ll_show_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/textView1"
+                    style="@style/tv_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="设备在线: " />
+
+                <ImageView
+                    android:id="@+id/iv_dialog_online"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="2dp"
+                    android:src="@android:drawable/sym_action_call" />
+
+                <TextView
+                    android:id="@+id/tv_dialog_online_state"
+                    style="@style/tv_show_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="在线" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/ll_show_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/textView1"
+                    style="@style/tv_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="设备状态: " />
+
+                <ImageView
+                    android:id="@+id/iv_dialog_on_off"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="2dp"
+                    android:src="@android:drawable/sym_action_call" />
+
+                <TextView
+                    android:id="@+id/tv_dialog_on_off_state"
+                    style="@style/tv_show_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="开机" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/ll_show_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <Button
+                    android:id="@+id/bt_dialog_on_off_cancle"
+                    style="@style/bt_style_settring"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="取消" />
+
+                <Button
+                    android:id="@+id/bt_dialog_on_off"
+                    style="@style/bt_style_settring"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Confirm" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

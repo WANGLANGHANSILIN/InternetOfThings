@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <TextView
+       style="@style/tv_style"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="系统设备配置"
+       android:textColor="@color/coral"
+       android:textSize="20sp" />
+     <LinearLayout
+        style="@style/ll_show_style"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:layout_marginTop="15dp">
+
+        <TextView
+            style="@style/tv_style"
+             android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="服务器IP: " 
+            android:gravity="center"
+            android:singleLine="true"/>
+
+        <ImageView
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:src="@drawable/ic_menu_ip" 
+            android:layout_marginRight="5dp"/>
+
+        <EditText
+            android:id="@+id/et_menu_ip"
+            style="@style/tv_show_style"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_edittext"
+            android:hint="IP地址..." />
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/ll_show_style"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            style="@style/tv_style"
+             android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="服务器端口: " 
+            android:gravity="center"
+            android:singleLine="true"/>
+
+        <ImageView
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:src="@drawable/ic_menu_port"
+            android:layout_marginRight="5dp" />
+
+        <EditText
+            android:id="@+id/et_menu_port"
+            style="@style/tv_show_style"
+           android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_edittext"
+            android:hint="端口..." />
+    </LinearLayout>
+
+     <LinearLayout
+        style="@style/ll_show_style"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp" >
+
+        <TextView
+            style="@style/tv_style"
+             android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="  ID: "
+            android:gravity="center"
+             />
+
+        <ImageView
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:src="@drawable/ic_menu_id"
+            android:layout_marginRight="5dp" />
+
+        <EditText
+            android:id="@+id/et_menu_id"
+            style="@style/tv_show_style"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_edittext"
+            android:hint="ID..." />
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/ll_show_style"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp" 
+        >
+
+        <TextView
+            style="@style/tv_style"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="授权码: " 
+            android:gravity="center"/>
+
+        <ImageView
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:src="@drawable/ic_menu_authen"
+            android:layout_marginRight="5dp" />
+
+        <EditText
+            android:id="@+id/et_menu_authen"
+            style="@style/tv_show_style"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_edittext"
+            android:hint="授权码..."
+            android:singleLine="true" 
+            
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/ll_show_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:layout_marginTop="5dp">
+
+        <Button
+            android:id="@+id/bt_menu_confirm"
+            style="@style/bt_style_settring"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="保存" />
+        
+        <Button
+            android:id="@+id/bt_menu_cancle"
+            style="@style/bt_style_settring"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="取消" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorAccent"
+    android:gravity="center_vertical"
+    android:padding="3dp"
+    android:minHeight="64dp" >
+
+    <Button
+        android:id="@+id/bt_title_left"
+        style="@style/include_name"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_alignParentLeft="true"
+        android:layout_margin="5dp" />
+    
+    <Button
+        android:id="@+id/bt_title_left1"
+        style="@style/include_name"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_toRightOf="@+id/bt_title_left"
+        android:layout_margin="5dp"
+        android:text="网"
+        android:textSize="17sp" />
+
+    <TextView
+        android:id="@+id/tv_title_cent"
+        style="@style/include_name"
+        android:layout_width="wrap_content"
+        android:layout_height="32dp"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="5dp"
+        android:minWidth="64dp" />
+
+    <Button
+        android:id="@+id/bt_title_right"
+        style="@style/include_name"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_alignParentRight="true"
+        android:layout_margin="5dp" />
+
+    <Button
+        android:id="@+id/bt_title_dsd"
+        style="@style/include_name"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_margin="5dp"
+        android:layout_toLeftOf="@+id/bt_title_right" />
+
+</RelativeLayout>

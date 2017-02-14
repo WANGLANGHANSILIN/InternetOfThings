@@ -1,0 +1,41 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/skyblue">
+
+    <include
+        android:layout_margin="5dp"
+        android:padding="5dp"
+        android:id="@+id/il_title"
+        layout="@layout/include_activity_tile" />
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:id="@+id/lv_show" 
+        android:layout_margin="5dp"
+        android:padding="5dp"
+        android:divider="@null"
+        android:dividerHeight="5dp"
+        >
+    </ListView>
+   <!-- 
+    <com.wanglang.internetofthings.view.GifView 
+        android:id="@+id/gifView"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_margin="10dp"/>
+ #dcdcdc 
+ -->
+ 
+ <ProgressBar 
+     android:id="@+id/update_progress"
+     style="@android:style/Widget.ProgressBar.Horizontal"
+     android:layout_width="match_parent"
+     android:layout_height="45dp"
+     android:progressDrawable="@drawable/progressbar"/>
+ 
+</LinearLayout>

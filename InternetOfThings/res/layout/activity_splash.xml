@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical" 
+    android:background="@color/white">
+
+    <ImageView
+        android:layout_width="128dp"
+        android:layout_height="128dp"
+        android:src="@drawable/fly_logo_lanch" />
+
+    <TextView
+        android:id="@+id/app_title_name"
+        android:layout_width="wrap_content"
+        android:layout_height="75dp"
+        android:singleLine="true"
+        android:text="物联网系统"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/skyblue"
+        android:textSize="20sp"
+        android:gravity="center" />
+
+</LinearLayout>

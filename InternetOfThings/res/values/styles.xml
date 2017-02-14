@@ -1,0 +1,69 @@
+<resources>
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+
+    <style name="styleName" parent="android:Widget.Holo.Light.Button">
+        <item name="android:gravity">center</item>
+        <item name="android:layout_marginLeft">2dp</item>
+        <item name="android:layout_marginRight">2dp</item>
+    </style>
+
+    <style name="include_name">
+        <item name="android:gravity">center</item>
+        <item name="android:layout_marginLeft">2dp</item>
+        <item name="android:layout_marginRight">2dp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+
+    <style name="ll_show_style">
+        <item name="android:gravity">center</item>
+        <item name="android:layout_marginTop">2dp</item>
+        <item name="android:minHeight">35dp</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <style name="tv_style" parent="android:Widget.Holo.Light.TextView">
+        <item name="android:layout_marginLeft">2dp</item>
+        <item name="android:layout_marginRight">2dp</item>
+        <item name="android:textColor">@color/lightpink</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+
+    <style name="tv_show_style" parent="@style/tv_style">
+        <item name="android:layout_marginLeft">2dp</item>
+        <item name="android:layout_marginRight">3dp</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="bt_style_settring" parent="@style/tv_show_style">
+        <item name="android:background">@drawable/bt_background_select</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:layout_marginRight">10dp</item>
+        <item name="android:minHeight">32dp</item>
+        <item name="android:minWidth">96dp</item>
+        <item name="android:padding">5dp</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:paddingRight">10dp</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="Widget.GifView" parent="@android:style/Widget" />
+
+</resources>
